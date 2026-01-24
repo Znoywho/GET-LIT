@@ -1,4 +1,6 @@
-
+#include <bits/stdc++.h>
+pragma once
+using namespace std;
 struct ListNode {
     int val;
     ListNode *next;
@@ -7,9 +9,7 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-class Solution {
-public:
-    ListNode* mergeKLists(vector<ListNode*>& lists) {
-        
-    }
-};
+class Solution{
+  public:
+    ListNode* mergeKLists(vector<ListNode*>& lists);
+}
