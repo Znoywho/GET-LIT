@@ -7,8 +7,9 @@
 
 ### Time complexity
 
-- ***Best case:*** the array was almost ordered $O(\log(n))$ 
-- ***Average case:*** nlogn  
+- ***Best case:*** the array was almost ordered $O(n)$ 
+- ***Average case:*** $nlog(n)$ 
+- ***Worst case:*** $O(n^2/2)$
 
 
 
