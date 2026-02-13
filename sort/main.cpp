@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
-#include "BUBBLE/ago.cpp"
+#include "BUBBLE/algo.cpp"
 using namespace std;
+
 int main(){
   int key; cin >> key;
   string sortType;
@@ -8,7 +9,9 @@ int main(){
   while (flag) {
     switch (key) {
       case 1:
-        
+        sortType = "Bubble Sort";
+
+        break;
         
     }
   }
