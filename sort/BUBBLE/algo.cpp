@@ -1,28 +1,4 @@
-#include <bits/stdc++.h>
-#include <vector>
-using namespace std;
-
-void Swap(int& a,int& b);
-void bubbleSort(vector<int>& ar);
-void bubbleSort1(vector<int>& ar); 
-
-
-
-int main(){
-  vector<int> hi = {9,4,2,1};
-  for (int i = 0; i < hi.size(); i++) {
-    cout << hi[i] << " ";
-  }
-  cout << endl;
-  bubbleSort1(hi);
-  for (int i = 0; i < hi.size(); i++) {
-    cout << hi[i] << " ";
-  }
-
-  return 0;
-}
-
-
+#include "algo.h"
 
 void Swap(int& a,int& b){
   int temp = a;
@@ -53,4 +29,6 @@ void bubbleSort1(vector<int>& ar){
     if (!swapped) break;
   }
 }
+
+
 
