@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-
+#include "algo.h"
 
 
 void swap(int &a,int &b){
@@ -10,9 +8,7 @@ void swap(int &a,int &b){
 }
 
 
-void selection_sort(vector<int> v){
-
-
+void selection_sort(vector<int>& v){
   for (int i = 0; i < v.size() - 1; i++) { // avoid out of bound
     int min = i;
     for(int j = i + 1;j<v.size();j++){
@@ -27,11 +23,3 @@ void selection_sort(vector<int> v){
 
 
 
-int main () {
-  vector<int> v = {1,2,4,8};
-  selection_sort(v);
-  for(int i = 0;i < v.size();i++){
-    cout << v[i] << " ";
-  }
-  return 0;
-}
