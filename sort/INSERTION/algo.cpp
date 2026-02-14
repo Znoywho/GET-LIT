@@ -1,5 +1,6 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include "algo.h"
+
+
 
 void swap(int a,int &b){
   int temp = a;
@@ -26,17 +27,3 @@ void insertion_sort(vector<int> &v){
   }
 }
 
-
-
-int main(){
-  vector<int> v = {1,2,8,9,4};
-  insertion_sort(v);
-  for (int i = 0; i < v.size(); i++) {
-    cout << v[i] <<  " ";
-  }
-
-
-
-
-  return 0;
-}

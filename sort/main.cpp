@@ -1,8 +1,7 @@
 #include <algorithm>
 #include<bits/stdc++.h>
-#include <chrono>
-#include <cmath>
 #include "BUBBLE/algo.h"
+#include "INSERTION/algo.h"
 using namespace std;
 using namespace std::chrono;
 
@@ -22,10 +21,18 @@ int main(){
         sortType = "Bubble Sort";
         bubbleSort1(value);
         break;
+      case 2:
+        insertion_sort(value);
+        sortType = "Selection Sort";
+        break;
+
+        
     }
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
-    cout << (float)duration.count()/pow(10,6);
+
+    cout << "===================" << sortType << "===================\n";
+    cout << (float)duration.count()/pow(10,6) << "\n";
   }
   return 0;
 }
