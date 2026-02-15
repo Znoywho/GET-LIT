@@ -2,7 +2,6 @@
 #include "BUBBLE/algo.h"
 #include "INSERTION/algo.h"
 #include "SELECTION/algo.h"
-
 using namespace std;
 using namespace std::chrono;
 
@@ -11,8 +10,6 @@ int main(){
   string sortType;
   bool flag = true;
   while (flag) {
-
-    
     vector<int> value(1000);
     auto f = []() -> int { return rand() % 10000; };
     generate(value.begin(),value.end(),f);
@@ -35,6 +32,7 @@ int main(){
     }
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
+    
 
     cout << "===================" << sortType << "===================\n";
     cout << (float)duration.count()/pow(10,6) << "\n";
