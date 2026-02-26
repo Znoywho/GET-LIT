@@ -1,5 +1,5 @@
+#pragma once
 #include <bits/stdc++.h>
-pragma once
 using namespace std;
 struct ListNode {
     int val;
@@ -10,6 +10,5 @@ struct ListNode {
 };
 
 class Solution{
-  public:
     ListNode* mergeKLists(vector<ListNode*>& lists);
 }

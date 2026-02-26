@@ -27,7 +27,7 @@ int main(){
         break;
       case 3:
         selection_sort(value);
-        sortType = "Insertion Sort";
+        sortType = "Ins ertion Sort";
         break; 
     }
     auto stop = high_resolution_clock::now();
