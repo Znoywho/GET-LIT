@@ -1,7 +1,7 @@
-#pragma once
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
-void swap(int& a,int& b);
-void HeapSort(vector<int>& ar);
-
+void myswap(int &a, int &b);
+void heapify(vector<int> a, int n, int i);
+void heapsort(vector<int> a);
