@@ -4,7 +4,6 @@ int randint(int a, int b) {
   // srand(time(0));
   return (rand() % (b - a + 1) + a);
 }
-
 void myswap(int &a, int &b) {
   int temp = a;
   a = b;
