@@ -3,7 +3,7 @@
 
 ## Anaysis
 > [!NOTE]
-> Use ~ **$N^2/2$** to compare and N exchange
+> Use ~ **$(N^2)/2$** to compare and N exchange
 
 ### Time complexity
 
