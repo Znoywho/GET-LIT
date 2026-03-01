@@ -10,6 +10,3 @@
 |heap|no|yes|$N\log{N}$|1|
 
 
-
-
-
