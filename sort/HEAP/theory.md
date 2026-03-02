@@ -21,5 +21,27 @@ void heapify(vector<int> &a, int n, int i) {
     heapify(a, n, i);
   }
 }
+```
+***Non-Recusive Heapify***
+```cpp
+void heapify(vector<int> &a, int n, int i) {
+  int v = a[i]; // Initializing
+  while (i < n / 2) {
+    // left child
+    int child = 2 * i + 1;
+    if (child < n - 1)
+      if (a[child] < a[child + 1]) // comparison between left and right childs
+        child++;
+    if (v >= a[child]) // set key
+      break;
+    // swapping
+    a[i] = a[child];
+    i = child; // change i
+  }
+  a[i] = v;
+}
+```
 
-``` 
+
+
+

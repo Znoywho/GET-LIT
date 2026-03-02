@@ -9,6 +9,9 @@ int main(int argc, char *argv[]) {
   for (int x : value) {
     cout << x << " ";
   }
+
+  buildHeap(value);
+
   heapsort(value);
   cout << "\nHEAP ARRAY\n";
   for (int x : value) {
