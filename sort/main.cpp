@@ -1,7 +1,8 @@
+#include "MODULE/algo.h"
+
 #include "BUBBLE/algo.h"
 #include "INSERTION/algo.h"
 #include "SELECTION/algo.h"
-#include <bits/stdc++.h>
 using namespace std;
 using namespace std::chrono;
 
