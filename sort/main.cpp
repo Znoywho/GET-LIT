@@ -15,6 +15,7 @@ int main() {
     auto start = high_resolution_clock::now();
     int key;
     cin >> key;
+    int a[] = {1, 2, 3};
     // Generate the test case
     switch (key) {
     case 1:

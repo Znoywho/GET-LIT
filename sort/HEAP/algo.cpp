@@ -1,13 +1,6 @@
 #include "algo.h"
 
 // return the interger between a <= i <= b
-int randint(int a, int b) { return (rand() % (b - a + 1) + a); }
-
-void myswap(int &a, int &b) {
-  int temp = a;
-  a = b;
-  b = temp;
-}
 
 // MAX HEAP
 void heapify(vector<int> &a, int n, int i) {
@@ -36,7 +29,7 @@ void heapsort(vector<int> &a) {
   }
 
   while (n > 1) {
-    myswap(a[0], a[n - 1]);
+    myswap<int>(a[0], a[n - 1]);
     n--;
     heapify(a, n, 0);
   }
