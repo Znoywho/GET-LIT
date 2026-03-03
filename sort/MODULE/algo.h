@@ -8,7 +8,7 @@
 #include <vector>
 using namespace std;
 
-template <class Item> Item radint(Item a, Item b) {
+template <class Item> Item randint(Item a, Item b) {
   int a1 = a;
   int b1 = b;
   return (rand() % (b1 - a1 + 1) + a1);

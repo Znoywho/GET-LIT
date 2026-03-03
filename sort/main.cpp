@@ -11,7 +11,7 @@ int main() {
   bool flag = true;
   while (flag) {
     vector<int> value(1000);
-    auto f = []() -> int { return rand() % 10000; };
+    auto f = []() -> int { return randint<int>(1, 10000); };
     generate(value.begin(), value.end(), f);
     auto start = high_resolution_clock::now();
     int key;

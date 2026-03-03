@@ -1,15 +1,13 @@
 #include "testcase.h"
 
-TestCase::TestCase(){
+TestCase::TestCase() {
   this->value.resize(10000);
-  auto f = []() -> int { return rand() % 10000; };
-  generate(this->value.begin(),this->value.end(),f);  
+  auto f = []() -> int { return randint<int>(1, 10000); };
+  generate(this->value.begin(), this->value.end(), f);
 }
 
-
-TestCase :: TestCase(int n){
+TestCase ::TestCase(int n) {
   this->value.resize(n);
   auto f = []() -> int { return rand() % 10000; };
-  generate(this->value.begin(),this->value.end(),f);  
-
+  generate(this->value.begin(), this->value.end(), f);
 }
